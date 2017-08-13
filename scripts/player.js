@@ -71,3 +71,7 @@ var player = {
      x: 280,
      y: 100
  };
+
+var game = {
+    'mode':'map'
+}
