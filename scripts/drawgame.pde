@@ -30,7 +30,12 @@ var mapD = [
  [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
  
 void draw() {
+  if (game.mode === 'map') {
+    draw_map();
+  }
 
+}
+void draw_map() {
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
   int yi = 1;
